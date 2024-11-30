@@ -1,0 +1,17 @@
+import type { z } from 'zod'
+import type {
+  updateBusinessSchema,
+  updateProfileSchema,
+} from '@/lib/form/validations/businessProfile.schema'
+import { type addIntegrationSchema } from '@/lib/form/validations/businessProfile.schema'
+import type { addRevenueStreamSchema } from '@/lib/form/validations/addRevenueStream.schema'
+import type { completeRegistrationSchema, signInSchema } from '@/lib/form/validations/auth'
+import type { addNoteSchema } from '@/lib/form/validations/chartInput.schema'
+
+export type AddIntegrationFormProps = z.infer<typeof addIntegrationSchema>
+export type AddRevenueStreamFormProps = z.infer<typeof addRevenueStreamSchema>
+export type CompleteRegistrationFormType = z.infer<typeof completeRegistrationSchema>
+export type ProfileEditFormProps = z.infer<typeof updateProfileSchema>
+export type BusinessEditFormProps = z.infer<typeof updateBusinessSchema>
+export type SignInFormProps = z.infer<typeof signInSchema>
+export type AddNoteFormProps = z.infer<typeof addNoteSchema>

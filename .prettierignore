@@ -1,0 +1,14 @@
+nodemodules/
+.next/
+dist/
+out/
+
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+bun.lockb
+
+*.min.*
+
+src/lib/typescript/types/database.types.ts
+src/lib/typescript/types/supabase.ts

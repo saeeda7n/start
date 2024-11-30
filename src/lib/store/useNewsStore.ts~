@@ -1,0 +1,50 @@
+import { create } from 'zustand'
+import { persist } from 'zustand/middleware'
+import { categorizeNewsTitle, getUrlContent, getUserNews } from '@/server/getUserNews'
+import type { TPersonalNews } from '@/lib/typescript/interfaces/personalNews.type'
+import { differenceInHours } from 'date-fns'
+
+interface NewsStore {
+  news: TPersonalNews[]
+  fetchNews: () => Promise<TPersonalNews[]>
+  addNewsByUrl: (url: string) => Promise<TPersonalNews>
+  last_update?: number
+}
+
+export const useNewsStore = create<NewsStore>()(
+  persist(
+    (set, getState) => ({
+      fetchNews: async () => {
+        const { last_update, news } = getState()
+        if (!last_update || Math.abs(differenceInHours(last_update, Date.now())) > 2) {
+          const news = await getUserNews()
+          set({ news, last_update: Date.now() })
+          return news
+        }
+        return news
+      },
+      addNewsByUrl: async (url: string) => {
+        const { data } = await getUrlContent(url)
+        if (!data?.metadata || !data.metadata.title) throw new Error('invalid url')
+        const { metadata } = data
+        const category = await categorizeNewsTitle(metadata.title || '')
+        const news = {
+          isCustom: true,
+          slug: (metadata.title || 'no slug').toLowerCase().replaceAll(' ', '-'),
+          id: crypto.randomUUID(),
+          originalUrl: metadata.sourceURL,
+          title: metadata.title,
+          body: metadata.description || '',
+          category: category.data.category || 'Others',
+          actionName: 'impact_on_investments',
+          thumbnailUrl: metadata.ogImage || metadata['og:image'] || '',
+          publishDate: metadata.publishedTime || Date.now(),
+        } as TPersonalNews
+        set({ news: [news, ...getState().news] })
+        return news
+      },
+      news: [],
+    }),
+    { name: 'news_store' }
+  )
+)

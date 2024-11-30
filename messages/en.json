@@ -1,0 +1,285 @@
+{
+  "Common": {
+    "logo_placeholder": "Book Audit Logo",
+    "read_more": "Read More"
+  },
+  "UserRoles": {
+    "ADMIN": "Admin",
+    "ACCOUNTANT": "Accountant",
+    "OWNER": "Owner"
+  },
+  "BusinessTypes": {
+    "SERVICE_COMPANY": "Service Company",
+    "ONLINE_CLOTHING_STORE": "Online Clothing Store",
+    "RESTAURANT_MANAGEMENT": "Restaurant Management"
+  },
+  "Auth": {
+    "register": "Register",
+    "login": "Login",
+    "Invalid login credentials": "Invalid login credentials",
+    "complete_registration": "Complete Registration"
+  },
+  "Sidebar": {
+    "dashboard": "Dashboard",
+    "tax_and_report": "Tax and Report",
+    "heath_score_card": "Health Score Card",
+    "ocr_documents": "Your Documents",
+    "personal_news": "Personal News",
+    "business_profile": "Business Profile",
+    "subscription": "Subscription",
+    "collapse_menu": "Collapse Menu",
+    "add_integration": "Integration",
+    "log_out": "Log Out",
+    "test": "Developing Components"
+  },
+  "MobileNavigator": {
+    "dashboard": "Dashboard",
+    "tax_and_report": "Report",
+    "personal_news": "News",
+    "business_profile": "Profile"
+  },
+  "RouteNames": {
+    "dashboard": "Dashboard",
+    "tax-and-report": "Tax and Report",
+    "health-score": "Health Score Card",
+    "documents": "Your Documents",
+    "news": "Personal News",
+    "business-profile": "Business Profile",
+    "subscription": "Subscription",
+    "test": "Developing Components",
+    "payment": "Payment"
+  },
+  "PersonalNews": {
+    "read_news": "Read News",
+    "effect_on_my_business": "Effects on my business",
+    "analyze_custom_news": "Analyze custom news.",
+    "analyze": "Analyze",
+    "custom": "Custom",
+    "summary": "Summary",
+    "recommendations": "Recommendations",
+    "custom_news_added": "Custom news analyzed and added to your news."
+  },
+  "YourDocuments": {
+    "your_documents": "Your Documents",
+    "add_document": "Add Document",
+    "no_document": "There is no document here."
+  },
+  "HealthScore": {
+    "invalid": "Requires Attention",
+    "valid": "In Compliance",
+    "problems": "Problems",
+    "upload": "Upload Document",
+    "link": "Open Quickbooks"
+  },
+  "DashboardHealthScoreCard": {
+    "health_score_card": "BookAudit Scorecard",
+    "details": "View Details",
+    "note": "Note",
+    "note_desc": "Your BookAudit Scorecard reflects your current compliance status. The 'In Compliance' percentage shows areas that meet all standards, while 'Requires Attention' highlights items needing review to ensure complete accuracy and compliance."
+  },
+  "DashboardRevenueCard": {
+    "your_revenue": "Financial Overview"
+  },
+  "DashboardTaxCard": {
+    "this_year_tax": "Annual Tax Summary",
+    "overview_of_financial_performance": "Overview of Financial Performance {year}.",
+    "card_title": "This Year Tax",
+    "year": "Year",
+    "revenue": "Revenue",
+    "finance_audit": "Finance Audit",
+    "tax": "Tax",
+    "return_tax": "Return Tax",
+    "eligible_tax_deductions": "Eligible Tax Deductions",
+    "estimated_tax_savings": "Estimated Tax Savings",
+    "tax_liability_forecast": "Tax Liability Forecast"
+  },
+  "DashboardImportExport": {
+    "import": "Import Documents",
+    "export": "Export Report"
+  },
+  "DashboardNewsCard": {
+    "personalized_news": "Personalized News",
+    "view_more": "View More"
+  },
+  "ChartCategories": {
+    "return_tax": "Return Tax",
+    "income": "Income",
+    "expenses": "Expenses",
+    "profit": "Profit"
+  },
+  "CompleteRegistration": {
+    "name_placeholder": "John Doe",
+    "name_label": "Full Name",
+    "province_placeholder": "Ontario",
+    "province_label": "Choose your province",
+    "role_placeholder": "Select your role",
+    "role_label": "Role",
+    "business_type_placeholder": "Select a business type",
+    "business_type_label": "Business Type",
+    "country_label": "Country",
+    "country_placeholder": "Choose your country",
+    "submit": "Submit"
+  },
+  "BusinessProfile": {
+    "account": "Account",
+    "business": "Business",
+    "integration": "Integration",
+    "forms": {
+      "update_profile": {
+        "email": "Email",
+        "password": "Password",
+        "full_name": "Full Name",
+        "current_password": "Current Password",
+        "new_password": "New Password",
+        "confirm_new_password": "Confirm New Password",
+        "submit": "Edit Account Information",
+        "profile_updated": "Your profile updated.",
+        "profile_updated_desc": "Your profile has been updated successfully."
+      },
+      "update_business": {
+        "business": "Business",
+        "company_name": "Company Name",
+        "choose": "Choose",
+        "category": "Category",
+        "number_of_employees": "Number of employees",
+        "province": "Province",
+        "annual_income": "Annual Income",
+        "submit": "Edit Business Information",
+        "business_updated": "Your business profile updated.",
+        "profile_updated_desc": "Your business profile has been updated successfully.",
+        "country": "Country",
+        "country_placeholder": "Choose yor country",
+        "province_placeholder": "Choose your province"
+      },
+      "update_profile_image": {
+        "delete_image": "Delete Image",
+        "profile_picture_uploaded": "Profile picture uploaded.",
+        "no_file_selected": "No file selected!"
+      },
+      "add_integration": {
+        "choose": "Choose your platform",
+        "add_integration": "Add Integration",
+        "platform": "Platform",
+        "client_id": "Client ID",
+        "secret_id": "Secret ID",
+        "submit": "Add",
+        "cancel": "Cancel",
+        "integration_added": "Integration added.",
+        "integration_added_desc": "Integration added successfully, you can merge all your data when ever you want to."
+      }
+    }
+  },
+  "FormSchema": {
+    "forget_password": {
+      "invalid_email": "Invalid email address"
+    },
+    "sign_in": {
+      "invalid_email": "Invalid email address",
+      "password_len": "Password must be at least 6 characters long.",
+      "password_lowercase": "Password must include at least one lowercase letter.",
+      "password_uppercase": "Password must include at least one uppercase letter.",
+      "password_digits": "Password must include at least one digit.",
+      "password_symbol": "Password must include at least one symbol."
+    },
+    "complete_registration": {
+      "required_role": "Please select your role!",
+      "required_business_type": "Please select your business type!",
+      "name_len": "Your name must be at least 6 characters long.",
+      "province_len": "Province name must be at least 2 characters long.",
+      "country_required": "Please select your country.",
+      "province_required": "Please select your province."
+    },
+    "add_custom_news": {
+      "invalid_url": "Invalid url"
+    },
+    "update_profile": {
+      "full_name_len": "Full name must be at least 6 characters long.",
+      "invalid_email": "Invalid email address.",
+      "password_len": "Password must be at least 6 characters long.",
+      "password_lowercase": "Password must include at least one lowercase letter.",
+      "password_uppercase": "Password must include at least one uppercase letter.",
+      "password_digits": "Password must include at least one digit.",
+      "password_symbol": "Password must include at least one symbol.",
+      "required": "This field is required.",
+      "not_same": "Passwords do not match."
+    },
+    "update_business": {
+      "company_name_len": "Company name must be at least 4 characters long.",
+      "required_business_type": "This field is required.",
+      "location_required": "Please provide your business location.",
+      "min_income": "Please provide your annual income.",
+      "min_employees": "Please provide your employees number.",
+      "country_required": "Please select your country.",
+      "province_required": "Please select your province."
+    },
+    "add_integration": {
+      "platform_required": "Please select your target platform.",
+      "client_secret_len": "Please enter a valid client secret id.",
+      "client_id_len": "Please enter a valid client id."
+    }
+  },
+  "NotFound": {
+    "title": "404 Page Not Found"
+  },
+
+  "Settings": { "profile": "Profile", "integrations": "Integrations" },
+  "SubscriptionSwitch": {
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "save": "Save %20"
+  },
+  "Subscription": {
+    "all_features": "All Features"
+  },
+  "Periods": {
+    "last_month": "Last Month",
+    "last_year": "Last Year",
+    "monthly": "Monthly",
+    "annually": "Annually",
+    "all_time": "All Time"
+  },
+  "SignIn": {
+    "Invalid login credentials": "Invalid login credentials",
+    "Invalid form data": "Invalid form data",
+    "title": "Login",
+    "email": "Email",
+    "password-label": "Password",
+    "password-placeholder": "Enter at least 8 Character",
+    "forgot": "Forgot Your Password?",
+    "signin": "Login",
+    "signup": "Register",
+    "message": "Don't have an account?",
+    "now": "now.",
+    "back": "Back",
+    "fetch_failed": "Network issue!",
+    "success": "You signed in successfully"
+  },
+  "SignUp": {
+    "title": "Register",
+    "email": "Email",
+    "password-label": "Password",
+    "password-placeholder": "Enter at least 8 Character",
+    "signin": "Login",
+    "signup": "Register",
+    "message": "Do you have an account?",
+    "now": "now.",
+    "back": "Back"
+  },
+  "SignOut": {
+    "message": "Do you really want to log out?",
+    "sign_out": "Log Out",
+    "cancel": "Cancel"
+  },
+  "ForgetPassword": {
+    "forget_password": "Forget Password",
+    "message": "Don't have an account?",
+    "email": "Email",
+    "restore": "Restore Password",
+    "signup": "Register",
+    "link_sent": "A Restore link sent to your inbox."
+  },
+  "Platforms": {
+    "quickbooks": "Quickbooks",
+    "quickbooks_desc": "QuickBooks is an accounting software for small businesses, offering tools for bookkeeping, invoicing, payroll, expense tracking, and financial reporting, simplifying financial management and ensuring tax compliance."
+  }
+}

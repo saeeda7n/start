@@ -1,0 +1,32 @@
+{
+  "theme_color": "#39AEB3",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Easyoffset - Offset Your Business Taxes with Sustainable Actions",
+  "short_name": "Easyoffset",
+  "description": "Easyoffset helps businesses offset their taxes for carbon emissions by engaging in sustainable actions. It provides guidance on eco-friendly practices that contribute to reducing your carbon footprint while benefiting your business.",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
